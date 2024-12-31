@@ -1,8 +1,61 @@
 .Navigation {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: var(--background-color);
   color: var(--text-color);
+  padding: 1rem;
+}
+
+.LeftSideControls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.LeftSideControls img {
+  height: 3rem;
+  margin-left: 1rem;
+}
+
+.BurgerMenuIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--text-color);
+}
+
+.BurgerMenuIcon:hover {
+  cursor: pointer;
+}
+
+.BurgerMenuButton {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.SearchBlock {
+  display: flex;
+  flex-direction: row;
+  padding: 0.3rem 0 0.3rem 0;
+}
+
+.SearchBlock button {
+  border: none;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: var(--accent);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.SearchBlock input {
+  padding-left: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  outline: none;
+  border: none;
+  width: 20vw;
 }

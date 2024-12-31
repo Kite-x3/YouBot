@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Nunito', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(14px, 2.5vw, 20px);
+}
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -6,6 +16,8 @@
 
   --background-color: black;
   --text-color: white;
+  --accent: #48ee8d;
+  --second-background-color: #48ee8d75;
 }
 
 body {
