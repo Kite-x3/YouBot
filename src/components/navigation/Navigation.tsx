@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { SideNavBar } from '../sideNavBar/SideNavBar'
 import classes from './Navigation.module.css'
 import { BurgerMenuIcon } from './icons/BurgerMenuIcon'
+import { ProfileIcon } from './icons/ProfileIcon'
 
 export const Navigation = () => {
   const [showSideBar, setShowSideBar] = useState(false)
@@ -27,7 +28,9 @@ export const Navigation = () => {
           <button>search</button>
         </div>
 
-        <button>кнопка</button>
+        <button className={classes.ProfileButton}>
+          <ProfileIcon className={classes.ProfileIcon} />
+        </button>
       </header>
       <SideNavBar show={showSideBar} />
     </>

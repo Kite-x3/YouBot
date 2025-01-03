@@ -1,5 +1,5 @@
 .SideNavBar {
-  background-color: var(--background-color);
+  background-color: var(--second-background-color);
   color: var(--text-color);
   display: flex;
   align-items: center;
@@ -20,9 +20,12 @@
 }
 
 .SideNavBar ul li {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   list-style-type: none;
   margin-bottom: 1rem;
   transition: all 0.3s ease;
@@ -30,5 +33,12 @@
 
 .SideNavBar ul li:hover {
   cursor: pointer;
-  background-color: var(--second-background-color);
+  background-color: var(--semi-transperent-accent-color);
+}
+
+.Logos {
+  height: 1rem;
+  fill: var(--text-color);
+  margin-right: 0.3rem;
+  margin-bottom: 0.1rem;
 }

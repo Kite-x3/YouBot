@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: var(--background-color);
+  background-color: var(--second-background-color);
   color: var(--text-color);
-  padding: 1rem;
+  padding: 0.3rem 1rem 0.3rem 1rem;
 }
 
 .LeftSideControls {
@@ -14,7 +14,8 @@
 }
 
 .LeftSideControls img {
-  height: 3rem;
+  height: 2.1rem;
+  padding: 0.2rem 0 0.2rem 0;
   margin-left: 1rem;
 }
 
@@ -58,4 +59,15 @@
   outline: none;
   border: none;
   width: 20vw;
+}
+
+.ProfileButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
 }

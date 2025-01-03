@@ -5,7 +5,7 @@
   font-family: 'Nunito', serif;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(14px, 2.5vw, 20px);
+  font-size: clamp(14px, 2.5vw, 18px);
 }
 
 :root {
@@ -14,10 +14,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --background-color: black;
+  --background-color: rgb(29, 29, 29);
   --text-color: white;
   --accent: #48ee8d;
-  --second-background-color: #48ee8d75;
+  --semi-transperent-accent-color: #48ee8d75;
+  --second-background-color: rgb(14, 14, 14);
 }
 
 body {
@@ -26,4 +27,5 @@ body {
   place-items: center;
   min-width: 100vw;
   min-height: 100vh;
+  background-color: var(--background-color);
 }
