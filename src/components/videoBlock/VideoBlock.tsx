@@ -4,10 +4,12 @@ export const VideoBlock = ({
   preview,
   text,
   profileIcon,
+  chanelName,
 }: {
   preview: string
   text: string
   profileIcon: string
+  chanelName: string
 }) => {
   return (
     <div className={classes.VideoBlock}>
@@ -18,7 +20,10 @@ export const VideoBlock = ({
           alt='chanel profile icon'
           className={classes.ProfileIcon}
         />
-        <h2>{text}</h2>
+        <div className={classes.textDescription}>
+          <h2>{text}</h2>
+          <span>{chanelName}</span>
+        </div>
       </div>
     </div>
   )
